@@ -1,9 +1,9 @@
-nome+-## Everton Mendes Gonçalves da Silva
-er you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
++-## Everton Mendes Gonçalves da Silva
 
 You can use the [editor on GitHub](https://github.com/emendesgs/emendesgs.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenev
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
