@@ -1,17 +1,17 @@
 # Portfólio - Everton Mendes
 
-Este é o repositório do meu portfólio pessoal e profissional, atuando como Frontend Developer & UI/UX Designer.
+Este é o repositório do meu portfólio pessoal e profissional, atuando como Desenvolvedor Frontend.
 
 ## Sobre o Projeto
 
 O portfólio foi totalmente reescrito usando tecnologias web nativas (**HTML5, CSS3, e Vanilla JavaScript**) para garantir máxima performance, acessibilidade e flexibilidade, dispensando o uso do Jekyll (que estava sendo utilizado anteriormente) e de frameworks pesados, resultando em um carregamento ultra rápido.
 
-O design foi cuidadosamente elaborado para refletir um estilo moderno, com tema escuro elegante, tipografia refinada e animações sutis, posicionando-se como um portfólio de um especialista.
+A interface foi cuidadosamente elaborada para refletir um estilo moderno, com tema escuro elegante, tipografia refinada e animações sutis, posicionando-se como um portfólio de um especialista.
 
 ## Tecnologias Utilizadas
 
 - **HTML5:** Semântica adequada e acessibilidade.
-- **CSS3 (Custom Properties):** Design responsivo e modular com CSS nativo (Variáveis). Tema Dark Mode integrado.
+- **CSS3 (Custom Properties):** Interface responsiva e modular com CSS nativo (Variáveis). Tema Dark Mode integrado.
 - **JavaScript (Vanilla):** Interações essenciais (Mobile Menu, ScrollSpy e controle de formulários).
 - **Google Fonts:** Tipografias 'Inter' e 'Fira Code'.
 - **FontAwesome:** Ícones vetoriais.
