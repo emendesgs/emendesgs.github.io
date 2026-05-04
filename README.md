@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+# Portfólio - Everton Mendes
 
-You can use the [editor on GitHub](https://github.com/emendesgs/emendesgs.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+Este é o repositório do meu portfólio pessoal e profissional, atuando como Frontend Developer & UI/UX Designer.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Sobre o Projeto
 
-### Markdown
+O portfólio foi totalmente reescrito usando tecnologias web nativas (**HTML5, CSS3, e Vanilla JavaScript**) para garantir máxima performance, acessibilidade e flexibilidade, dispensando o uso do Jekyll (que estava sendo utilizado anteriormente) e de frameworks pesados, resultando em um carregamento ultra rápido.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+O design foi cuidadosamente elaborado para refletir um estilo moderno, com tema escuro elegante, tipografia refinada e animações sutis, posicionando-se como um portfólio de um especialista.
 
-```markdown
-Syntax highlighted code block
+## Tecnologias Utilizadas
 
-# Header 1
-## Header 2
-### Header 3
+- **HTML5:** Semântica adequada e acessibilidade.
+- **CSS3 (Custom Properties):** Design responsivo e modular com CSS nativo (Variáveis). Tema Dark Mode integrado.
+- **JavaScript (Vanilla):** Interações essenciais (Mobile Menu, ScrollSpy e controle de formulários).
+- **Google Fonts:** Tipografias 'Inter' e 'Fira Code'.
+- **FontAwesome:** Ícones vetoriais.
 
-- Bulleted
-- List
+## Estrutura do Repositório
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+.
+├── css/
+│   └── style.css       # Estilos globais e componentes
+├── js/
+│   └── main.js         # Lógicas de interação da UI
+├── index.html          # Estrutura principal da página
+└── README.md           # Documentação
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Como Visualizar Localmente
 
-### Jekyll Themes
+Não há dependências ou build-steps complexos. Basta rodar um servidor estático local na raiz do projeto, por exemplo:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/emendesgs/emendesgs.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```bash
+# Utilizando Python
+python3 -m http.server 8000
+```
 
-### Support or Contact
+E acessar `http://localhost:8000` em seu navegador.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Contato e Links
+
+- **GitHub:** [emendesgs](https://github.com/emendesgs)
+- **Hospedagem:** O site é hospedado via [GitHub Pages](https://pages.github.com/).
