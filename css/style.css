@@ -763,3 +763,19 @@ input:focus, textarea:focus {
         padding: 1.5rem;
     }
 }
+
+/*
+==============================================
+   EXPERIENCE SECTION (ADDED)
+==============================================
+*/
+.experience .timeline { position: relative; max-width: 800px; margin: 0 auto; padding: 2rem 0; }
+.timeline::before { content: ''; position: absolute; left: 50%; width: 2px; height: 100%; background: var(--primary); transform: translateX(-50%); }
+.timeline-item { position: relative; margin-bottom: 2rem; width: 100%; display: flex; justify-content: flex-end; }
+.timeline-item:nth-child(even) { justify-content: flex-start; }
+.timeline-content { width: 45%; background: var(--bg-card); padding: 1.5rem; border-radius: var(--border-radius); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.timeline-date { color: var(--primary); font-size: 0.9rem; margin-bottom: 0.5rem; font-family: var(--font-mono); }
+.timeline-title { font-size: 1.2rem; margin-bottom: 0.25rem; color: var(--text-main); }
+.timeline-company { font-size: 1rem; color: var(--text-muted); margin-bottom: 1rem; }
+.profile-image { width: 100%; height: 100%; object-fit: cover; border-radius: var(--border-radius-lg); z-index: 2; position: relative; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+.project-img { width: 100%; height: 100%; object-fit: cover; display: block; }
