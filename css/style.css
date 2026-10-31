@@ -732,18 +732,25 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 0.9rem;
-    flex-wrap: wrap;
+    margin-bottom: 1.1rem;
+    min-height: 28px;
 }
 
 .case-badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.74rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.05em;
     color: var(--cyan);
+    line-height: 1;
+}
+
+.case-badge i {
+    font-size: 0.75rem;
 }
 
 .case-badge-proprietary {
@@ -751,17 +758,22 @@ a:hover {
 }
 
 .case-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.8rem;
     color: #fff;
+    line-height: 1.35;
+    min-height: 3.2rem;
+    display: flex;
+    align-items: flex-start;
 }
 
 .case-desc {
     font-size: 0.92rem;
     color: var(--text-secondary);
     line-height: 1.65;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.5rem;
+    min-height: 5.6rem;
     flex-grow: 1;
 }
 
@@ -914,10 +926,26 @@ a:hover {
 }
 
 .contact-action-buttons {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1rem;
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact-action-buttons .btn {
+    width: 100%;
+    height: 52px;
+    padding: 0 1.4rem;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: nowrap;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
 }
 
 /* ============================================================
@@ -1006,6 +1034,18 @@ a:hover {
 
     .contact-card-box {
         padding: 2rem 1.2rem;
+    }
+
+    .contact-action-buttons {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 0.9rem;
+    }
+
+    .contact-action-buttons .btn {
+        height: 50px;
+        white-space: normal;
+        font-size: 0.92rem;
     }
 
     .skills-tags-grid {
