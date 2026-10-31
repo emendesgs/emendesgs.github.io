@@ -194,6 +194,59 @@ a:hover {
     transition: var(--transition);
 }
 
+/* Language Switcher Pill */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(31, 35, 53, 0.75);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-pill);
+    padding: 0.22rem 0.5rem;
+    gap: 0.3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    padding: 0.18rem 0.48rem;
+    border-radius: var(--radius-pill);
+    transition: var(--transition);
+    line-height: 1.2;
+}
+
+.lang-btn:hover {
+    color: #fff;
+}
+
+.lang-btn.active {
+    background: rgba(122, 162, 247, 0.18);
+    color: var(--cyan);
+    border-color: rgba(125, 207, 255, 0.45);
+    box-shadow: 0 0 10px rgba(125, 207, 255, 0.25);
+}
+
+.lang-sep {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    opacity: 0.4;
+    user-select: none;
+}
+
 /* ============================================================
    SEÇÕES GERAIS
 ============================================================ */

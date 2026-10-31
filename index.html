@@ -20,17 +20,24 @@
         <nav class="navbar container">
             <a href="#" class="logo">e<span class="logo-prompt-arrow">&gt;</span>erton<span class="logo-prompt-dev">.dev</span></a>
             <ul class="nav-links">
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#experience" class="nav-link">Trajetória</a></li>
-                <li><a href="#projects" class="nav-link">Cases</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="curriculo-everton-mendes.pdf" target="_blank" class="nav-link cv-badge"><i class="fas fa-file-pdf"></i> Currículo</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">Sobre</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav_experience">Trajetória</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav_cases">Cases</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="curriculo-everton-mendes.pdf" target="_blank" class="nav-link cv-badge"><i class="fas fa-file-pdf"></i> <span data-i18n="nav_cv">Currículo</span></a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contato</a></li>
             </ul>
-            <div class="hamburger" aria-label="Abrir Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-actions">
+                <div class="lang-switch" role="group" aria-label="Seletor de Idioma / Language Switcher">
+                    <button class="lang-btn active" data-set-lang="pt" type="button" aria-label="Português">PT</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-set-lang="en" type="button" aria-label="English">EN</button>
+                </div>
+                <div class="hamburger" aria-label="Abrir Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -42,16 +49,16 @@
                 <div class="hero-text">
                     <div class="status-pill">
                         <span class="status-dot"></span>
-                        IT Specialist @F1RST (Santander) · Aberto a conexões
+                        <span data-i18n="hero_status">IT Specialist @F1RST (Santander) · Aberto a conexões</span>
                     </div>
                     <h1 class="name">Everton Mendes</h1>
-                    <h2 class="role">Especialista Frontend & <span class="highlight">Engenheiro de Software</span></h2>
-                    <p class="bio">
+                    <h2 class="role"><span data-i18n="hero_role_prefix">Especialista Frontend & </span><span class="highlight" data-i18n="hero_role_highlight">Engenheiro de Software</span></h2>
+                    <p class="bio" data-i18n-html="hero_bio">
                         Mais de 7 anos construindo arquiteturas frontend escaláveis e sistemas distribuídos de alta criticidade. Especialista no ecossistema <strong>Angular (Signals/RxJS)</strong>, <strong>Micro-frontends</strong> e <strong>Design Systems</strong>, com sólida atuação em microsserviços <strong>Java (Spring Boot)</strong> e pagamentos instantâneos de larga escala (PIX).
                     </p>
                     <div class="hero-cta">
-                        <a href="curriculo-everton-mendes.pdf" download class="btn btn-primary"><i class="fas fa-file-pdf"></i> Baixar Currículo Master</a>
-                        <a href="#projects" class="btn btn-outline"><i class="fas fa-layer-group"></i> Explorar Cases</a>
+                        <a href="curriculo-everton-mendes.pdf" download class="btn btn-primary"><i class="fas fa-file-pdf"></i> <span data-i18n="hero_btn_cv">Baixar Currículo Master</span></a>
+                        <a href="#projects" class="btn btn-outline"><i class="fas fa-layer-group"></i> <span data-i18n="hero_btn_cases">Explorar Cases</span></a>
                     </div>
                     <div class="social-links">
                         <a href="https://github.com/emendesgs" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -70,11 +77,11 @@
                         <span class="code-card-title">architecture.config.ts</span>
                     </div>
                     <div class="code-card-body">
-<pre><code><span class="code-comment">// Perfil Arquitetural</span>
+<pre><code><span class="code-comment" data-i18n="code_comment">// Perfil Arquitetural</span>
 <span class="code-kw">export const</span> <span class="code-fn">EngineerProfile</span> = {
   <span class="code-prop">name</span>: <span class="code-str">'Everton Mendes'</span>,
-  <span class="code-prop">role</span>: <span class="code-str">'IT Specialist @F1RST (Santander)'</span>,
-  <span class="code-prop">experience</span>: <span class="code-str">'7+ anos'</span>,
+  <span class="code-prop">role</span>: <span class="code-str" data-i18n="code_role">'IT Specialist @F1RST (Santander)'</span>,
+  <span class="code-prop">experience</span>: <span class="code-str" data-i18n="code_exp">'7+ anos'</span>,
   <span class="code-prop">frontend</span>: [
     <span class="code-str">'Angular (Signals / Standalone)'</span>,
     <span class="code-str">'Micro-frontends (Module Federation)'</span>,
@@ -86,8 +93,8 @@
     <span class="code-str">'Node.js & NestJS'</span>,
     <span class="code-str">'SQL & PostgreSQL'</span>
   ],
-  <span class="code-prop">criticalDomain</span>: <span class="code-str">'Banking / PIX Transacional'</span>,
-  <span class="code-prop">designEdge</span>: <span class="code-str">'Design Gráfico (SAGA)'</span>
+  <span class="code-prop">criticalDomain</span>: <span class="code-str" data-i18n="code_domain">'Banking / PIX Transacional'</span>,
+  <span class="code-prop">designEdge</span>: <span class="code-str" data-i18n="code_design">'Design Gráfico (SAGA)'</span>
 };</code></pre>
                     </div>
                 </div>
@@ -98,20 +105,20 @@
         <section class="metrics-bar">
             <div class="container metrics-grid">
                 <div class="metric-item">
-                    <div class="metric-val">7+ Anos</div>
-                    <div class="metric-label">De engenharia e arquitetura de software</div>
+                    <div class="metric-val" data-i18n="metric_1_val">7+ Anos</div>
+                    <div class="metric-label" data-i18n="metric_1_label">De engenharia e arquitetura de software</div>
                 </div>
                 <div class="metric-item">
-                    <div class="metric-val">Missão Crítica</div>
-                    <div class="metric-label">Módulos PIX-PJ (Bradesco) e canais Santander</div>
+                    <div class="metric-val" data-i18n="metric_2_val">Missão Crítica</div>
+                    <div class="metric-label" data-i18n="metric_2_label">Módulos PIX-PJ (Bradesco) e canais Santander</div>
                 </div>
                 <div class="metric-item">
-                    <div class="metric-val">Micro-frontends</div>
-                    <div class="metric-label">Decomposição e governança entre squads</div>
+                    <div class="metric-val" data-i18n="metric_3_val">Micro-frontends</div>
+                    <div class="metric-label" data-i18n="metric_3_label">Decomposição e governança entre squads</div>
                 </div>
                 <div class="metric-item">
-                    <div class="metric-val">Design Systems</div>
-                    <div class="metric-label">Ponte direta entre UX/UI e código frontend</div>
+                    <div class="metric-val" data-i18n="metric_4_val">Design Systems</div>
+                    <div class="metric-label" data-i18n="metric_4_label">Ponte direta entre UX/UI e código frontend</div>
                 </div>
             </div>
         </section>
@@ -120,22 +127,22 @@
         <section id="about" class="section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Fundamentos</span>
-                    <h2 class="section-title">Sobre Mim</h2>
-                    <p class="section-subtitle">Engenharia sólida focada em manutenibilidade, alta concorrência e harmonia entre design e código.</p>
+                    <span class="section-tag" data-i18n="about_tag">Fundamentos</span>
+                    <h2 class="section-title" data-i18n="about_title">Sobre Mim</h2>
+                    <p class="section-subtitle" data-i18n="about_subtitle">Engenharia sólida focada em manutenibilidade, alta concorrência e harmonia entre design e código.</p>
                 </div>
                 <div class="about-grid">
                     <div class="about-narrative">
-                        <p>
+                        <p data-i18n="about_p1">
                             Sou Engenheiro de Software com trajetória consolidada em ambientes de alta criticidade e larga escala nos setores financeiro e varejista.
                         </p>
-                        <p>
+                        <p data-i18n-html="about_p2">
                             Atualmente, como <strong>IT Specialist na F1RST (Grupo Santander)</strong>, lidero tecnicamente frentes de arquitetura frontend, direcionando a migração de monólitos legados para ecossistemas modernos de micro-frontends em Angular e assegurando a governança de Design Systems corporativos.
                         </p>
-                        <p>
+                        <p data-i18n-html="about_p3">
                             Anteriormente, atuei no núcleo de desenvolvimento e sustentação de soluções estratégicas para o <strong>PIX-PJ no Banco Bradesco (via Capgemini)</strong>, operando sob requisitos estritos de segurança e tolerância zero a indisponibilidade.
                         </p>
-                        <p>
+                        <p data-i18n-html="about_p4">
                             Minha formação prévia em <strong>Design Gráfico</strong> me permite atuar como elo colaborativo natural entre times de UX/UI e equipes de engenharia, criando componentes com alta fidelidade visual, acessibilidade e ergonomia.
                         </p>
                     </div>
@@ -144,24 +151,24 @@
                         <div class="pillar-card">
                             <div class="pillar-icon"><i class="fas fa-cubes"></i></div>
                             <div class="pillar-info">
-                                <h4>Arquitetura de Micro-frontends</h4>
-                                <p>Desacoplamento de aplicações corporativas via Module Federation e arquiteturas modulares, viabilizando deploys autônomos entre múltiplos squads.</p>
+                                <h4 data-i18n="pillar_1_title">Arquitetura de Micro-frontends</h4>
+                                <p data-i18n="pillar_1_desc">Desacoplamento de aplicações corporativas via Module Federation e arquiteturas modulares, viabilizando deploys autônomos entre múltiplos squads.</p>
                             </div>
                         </div>
 
                         <div class="pillar-card">
                             <div class="pillar-icon"><i class="fas fa-layer-group"></i></div>
                             <div class="pillar-info">
-                                <h4>Design Systems & UI Engineering</h4>
-                                <p>Criação, documentação e padronização de bibliotecas de componentes reutilizáveis, garantindo acessibilidade (WCAG) e consistência de marca.</p>
+                                <h4 data-i18n="pillar_2_title">Design Systems & UI Engineering</h4>
+                                <p data-i18n="pillar_2_desc">Criação, documentação e padronização de bibliotecas de componentes reutilizáveis, garantindo acessibilidade (WCAG) e consistência de marca.</p>
                             </div>
                         </div>
 
                         <div class="pillar-card">
                             <div class="pillar-icon"><i class="fas fa-shield-alt"></i></div>
                             <div class="pillar-info">
-                                <h4>Sistemas Críticos & Resiliência</h4>
-                                <p>Desenvolvimento focado em segurança transacional, tolerância a falhas e performance em operações de alto volume (ecossistema PIX).</p>
+                                <h4 data-i18n="pillar_3_title">Sistemas Críticos & Resiliência</h4>
+                                <p data-i18n="pillar_3_desc">Desenvolvimento focado em segurança transacional, tolerância a falhas e performance em operações de alto volume (ecossistema PIX).</p>
                             </div>
                         </div>
                     </div>
@@ -173,9 +180,9 @@
         <section id="experience" class="section bg-surface">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Carreira</span>
-                    <h2 class="section-title">Trajetória Profissional</h2>
-                    <p class="section-subtitle">Histórico comprovado de impacto e liderança técnica em grandes operações.</p>
+                    <span class="section-tag" data-i18n="exp_tag">Carreira</span>
+                    <h2 class="section-title" data-i18n="exp_title">Trajetória Profissional</h2>
+                    <p class="section-subtitle" data-i18n="exp_subtitle">Histórico comprovado de impacto e liderança técnica em grandes operações.</p>
                 </div>
 
                 <div class="timeline-wrapper">
@@ -184,17 +191,17 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-card">
                             <div class="timeline-header">
-                                <h3 class="timeline-title">IT Specialist & Liderança Técnica</h3>
-                                <span class="timeline-period">Maio 2026 — Presente</span>
+                                <h3 class="timeline-title" data-i18n="exp_1_title">IT Specialist & Liderança Técnica</h3>
+                                <span class="timeline-period" data-i18n="exp_1_period">Maio 2026 — Presente</span>
                             </div>
                             <div class="timeline-company">
-                                <i class="fas fa-building"></i> F1RST Digital Services (Grupo Santander) · São Paulo, SP (Híbrido)
+                                <i class="fas fa-building"></i> <span data-i18n="exp_1_company">F1RST Digital Services (Grupo Santander) · São Paulo, SP (Híbrido)</span>
                             </div>
                             <ul class="timeline-bullets">
-                                <li>Liderança técnica e direcionamento arquitetural na migração de plataformas legadas para micro-frontends modernos em Angular.</li>
-                                <li>Definição de padrões de projeto corporativos e governança de repositórios escaláveis em escala corporativa.</li>
-                                <li>Implementação e evolução contínua de Design Systems compartilhados, acelerando releases em múltiplos squads.</li>
-                                <li>Otimização de pipelines de CI/CD para build, testes automatizados e deploy descentralizado.</li>
+                                <li data-i18n="exp_1_b1">Liderança técnica e direcionamento arquitetural na migração de plataformas legadas para micro-frontends modernos em Angular.</li>
+                                <li data-i18n="exp_1_b2">Definição de padrões de projeto corporativos e governança de repositórios escaláveis em escala corporativa.</li>
+                                <li data-i18n="exp_1_b3">Implementação e evolução contínua de Design Systems compartilhados, acelerando releases em múltiplos squads.</li>
+                                <li data-i18n="exp_1_b4">Otimização de pipelines de CI/CD para build, testes automatizados e deploy descentralizado.</li>
                             </ul>
                             <div class="timeline-tags">
                                 <span class="timeline-tag">Angular</span>
@@ -212,22 +219,22 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-card">
                             <div class="timeline-header">
-                                <h3 class="timeline-title">IT Senior Analyst</h3>
-                                <span class="timeline-period">Abril 2023 — Abril 2026</span>
+                                <h3 class="timeline-title" data-i18n="exp_2_title">IT Senior Analyst</h3>
+                                <span class="timeline-period" data-i18n="exp_2_period">Abril 2023 — Abril 2026</span>
                             </div>
                             <div class="timeline-company">
-                                <i class="fas fa-building"></i> F1RST Digital Services (Grupo Santander) · São Paulo, SP (Híbrido)
+                                <i class="fas fa-building"></i> <span data-i18n="exp_2_company">F1RST Digital Services (Grupo Santander) · São Paulo, SP (Híbrido)</span>
                             </div>
                             <ul class="timeline-bullets">
-                                <li>Desenvolvimento e sustentação de soluções críticas e de alta disponibilidade para o canal de Pessoa Jurídica (PJ).</li>
-                                <li>Decomposição prática de jornadas monolíticas em micro-frontends Angular integrados a microsserviços em Java.</li>
-                                <li>Construção de aplicações web corporativas performáticas com foco em tempo de resposta e segurança transacional.</li>
+                                <li data-i18n="exp_2_b1">Desenvolvimento e sustentação de soluções críticas e de alta disponibilidade para o canal de Pessoa Jurídica (PJ).</li>
+                                <li data-i18n="exp_2_b2">Decomposição prática de jornadas monolíticas em micro-frontends Angular integrados a microsserviços em Java.</li>
+                                <li data-i18n="exp_2_b3">Construção de aplicações web corporativas performáticas com foco em tempo de resposta e segurança transacional.</li>
                             </ul>
                             <div class="timeline-tags">
                                 <span class="timeline-tag">Angular</span>
                                 <span class="timeline-tag">Java (Spring)</span>
                                 <span class="timeline-tag">REST APIs</span>
-                                <span class="timeline-tag">Canal PJ Bancário</span>
+                                <span class="timeline-tag" data-i18n="exp_2_tag_channel">Canal PJ Bancário</span>
                             </div>
                         </div>
                     </div>
@@ -237,24 +244,24 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-card">
                             <div class="timeline-header">
-                                <h3 class="timeline-title">Analista de Sistemas Sênior / Pleno</h3>
-                                <span class="timeline-period">Novembro 2021 — Março 2023</span>
+                                <h3 class="timeline-title" data-i18n="exp_3_title">Analista de Sistemas Sênior / Pleno</h3>
+                                <span class="timeline-period" data-i18n="exp_3_period">Novembro 2021 — Março 2023</span>
                             </div>
                             <div class="timeline-company">
-                                <i class="fas fa-building"></i> Capgemini SA (Projeto Banco Bradesco) · Remoto
+                                <i class="fas fa-building"></i> <span data-i18n="exp_3_company">Capgemini SA (Projeto Banco Bradesco) · Remoto</span>
                             </div>
                             <ul class="timeline-bullets">
-                                <li>Desenvolvimento e sustentação de módulos estratégicos de missão crítica para o ecossistema PIX-PJ.</li>
-                                <li>Desenvolvimento mobile WebView em Angular integrado aos canais corporativos e de pessoa física do Bradesco.</li>
-                                <li>Atuação fullstack integrando interfaces frontend com APIs e microsserviços em Java e Node.js.</li>
-                                <li>Garantia de conformidade com diretrizes regulatórias e segurança em pagamentos instantâneos em larga escala.</li>
+                                <li data-i18n="exp_3_b1">Desenvolvimento e sustentação de módulos estratégicos de missão crítica para o ecossistema PIX-PJ.</li>
+                                <li data-i18n="exp_3_b2">Desenvolvimento mobile WebView em Angular integrado aos canais corporativos e de pessoa física do Bradesco.</li>
+                                <li data-i18n="exp_3_b3">Atuação fullstack integrando interfaces frontend com APIs e microsserviços em Java e Node.js.</li>
+                                <li data-i18n="exp_3_b4">Garantia de conformidade com diretrizes regulatórias e segurança em pagamentos instantâneos em larga escala.</li>
                             </ul>
                             <div class="timeline-tags">
-                                <span class="timeline-tag">PIX Transacional</span>
+                                <span class="timeline-tag" data-i18n="exp_3_tag_pix">PIX Transacional</span>
                                 <span class="timeline-tag">Angular WebView</span>
                                 <span class="timeline-tag">Java</span>
                                 <span class="timeline-tag">Node.js</span>
-                                <span class="timeline-tag">Segurança Bancária</span>
+                                <span class="timeline-tag" data-i18n="exp_3_tag_sec">Segurança Bancária</span>
                             </div>
                         </div>
                     </div>
@@ -264,22 +271,22 @@
                         <div class="timeline-dot"></div>
                         <div class="timeline-card">
                             <div class="timeline-header">
-                                <h3 class="timeline-title">Engenheiro de Software (Promovido de Estagiário)</h3>
-                                <span class="timeline-period">Maio 2019 — Novembro 2021</span>
+                                <h3 class="timeline-title" data-i18n="exp_4_title">Engenheiro de Software (Promovido de Estagiário)</h3>
+                                <span class="timeline-period" data-i18n="exp_4_period">Maio 2019 — Novembro 2021</span>
                             </div>
                             <div class="timeline-company">
-                                <i class="fas fa-building"></i> Home Center Ferreira Costa · Recife, PE (Presencial)
+                                <i class="fas fa-building"></i> <span data-i18n="exp_4_company">Home Center Ferreira Costa · Recife, PE (Presencial)</span>
                             </div>
                             <ul class="timeline-bullets">
-                                <li>Atuação no laboratório de inovação desenvolvendo protótipos funcionais e automações para o setor de varejo.</li>
-                                <li>Construção de sistemas internos com Angular e Node.js que reduziram o tempo de processos operacionais de loja.</li>
-                                <li>Promoção acelerada para Engenheiro de Software em reconhecimento ao impacto direto das entregas.</li>
+                                <li data-i18n="exp_4_b1">Atuação no laboratório de inovação desenvolvendo protótipos funcionais e automações para o setor de varejo.</li>
+                                <li data-i18n="exp_4_b2">Construção de sistemas internos com Angular e Node.js que reduziram o tempo de processos operacionais de loja.</li>
+                                <li data-i18n="exp_4_b3">Promoção acelerada para Engenheiro de Software em reconhecimento ao impacto direto das entregas.</li>
                             </ul>
                             <div class="timeline-tags">
                                 <span class="timeline-tag">Angular</span>
                                 <span class="timeline-tag">Node.js</span>
-                                <span class="timeline-tag">Inovação</span>
-                                <span class="timeline-tag">Varejo</span>
+                                <span class="timeline-tag" data-i18n="exp_4_tag_innov">Inovação</span>
+                                <span class="timeline-tag" data-i18n="exp_4_tag_retail">Varejo</span>
                             </div>
                         </div>
                     </div>
@@ -291,9 +298,9 @@
         <section id="projects" class="section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Engenharia em Prática</span>
-                    <h2 class="section-title">Cases & Projetos em Destaque</h2>
-                    <p class="section-subtitle">Aplicações reais desenhadas com foco em usabilidade, escalabilidade e robustez arquitetural.</p>
+                    <span class="section-tag" data-i18n="cases_tag">Engenharia em Prática</span>
+                    <h2 class="section-title" data-i18n="cases_title">Cases & Projetos em Destaque</h2>
+                    <p class="section-subtitle" data-i18n="cases_subtitle">Aplicações reais desenhadas com foco em usabilidade, escalabilidade e robustez arquitetural.</p>
                 </div>
 
                 <div class="cases-grid">
@@ -301,11 +308,11 @@
                     <div class="case-card">
                         <div>
                             <div class="case-badges-header">
-                                <span class="case-badge case-badge-proprietary"><i class="fas fa-rocket"></i> SaaS Comercial</span>
-                                <span class="case-status-badge"><i class="fas fa-circle-check" style="color: var(--emerald);"></i> Em Produção</span>
+                                <span class="case-badge case-badge-proprietary"><i class="fas fa-rocket"></i> <span data-i18n="case_1_badge">SaaS Comercial</span></span>
+                                <span class="case-status-badge"><i class="fas fa-circle-check" style="color: var(--emerald);"></i> <span data-i18n="case_1_status">Em Produção</span></span>
                             </div>
                             <h3 class="case-title">Lance-X (EventPro Platform)</h3>
-                            <p class="case-desc">
+                            <p class="case-desc" data-i18n="case_1_desc">
                                 Plataforma SaaS mobile-first para gestão de eventos e contratação operacional em produção. Arquitetura fullstack escalável em monorepo pnpm com carteira digital e ledger financeiro com conciliação PIX, autenticação biométrica com Apple Sign-In, KYC e conformidade com LGPD.
                             </p>
                             <div class="case-stack">
@@ -314,14 +321,14 @@
                                 <span>NestJS 11</span>
                                 <span>Prisma 7</span>
                                 <span>PostgreSQL</span>
-                                <span>Ledger Atômico</span>
+                                <span data-i18n="case_1_tag_ledger">Ledger Atômico</span>
                                 <span>PIX</span>
                                 <span>Cloudflare R2</span>
                             </div>
                         </div>
                         <div class="case-footer">
-                            <span class="case-status-badge"><i class="fas fa-shield-halved" style="color: var(--cyan);"></i> Código Privado (NDA)</span>
-                            <a href="mailto:emendesgs@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Walkthrough%20T%C3%A9cnico%20-%20Lance-X&body=Ol%C3%A1%20Everton%2C%20gostaria%20de%20agendar%20um%20walkthrough%20t%C3%A9cnico%20da%20arquitetura%20do%20Lance-X." class="case-link"><i class="fas fa-envelope-open-text"></i> Solicitar Walkthrough <i class="fas fa-arrow-right"></i></a>
+                            <span class="case-status-badge"><i class="fas fa-shield-halved" style="color: var(--cyan);"></i> <span data-i18n="case_1_footer_nda">Código Privado (NDA)</span></span>
+                            <a href="mailto:emendesgs@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Walkthrough%20T%C3%A9cnico%20-%20Lance-X&body=Ol%C3%A1%20Everton%2C%20gostaria%20de%20agendar%20um%20walkthrough%20t%C3%A9cnico%20da%20arquitetura%20do%20Lance-X." class="case-link"><i class="fas fa-envelope-open-text"></i> <span data-i18n="case_1_cta">Solicitar Walkthrough</span> <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -329,11 +336,11 @@
                     <div class="case-card">
                         <div>
                             <div class="case-badges-header">
-                                <span class="case-badge"><i class="fas fa-layer-group"></i> Micro-frontends</span>
+                                <span class="case-badge"><i class="fas fa-layer-group"></i> <span data-i18n="case_2_badge">Micro-frontends</span></span>
                                 <span class="case-status-badge"><i class="fas fa-building" style="color: var(--primary);"></i> Santander</span>
                             </div>
-                            <h3 class="case-title">Micro-frontends & Design System</h3>
-                            <p class="case-desc">
+                            <h3 class="case-title" data-i18n="case_2_title">Micro-frontends & Design System</h3>
+                            <p class="case-desc" data-i18n="case_2_desc">
                                 Liderança arquitetural na decomposição de plataformas corporativas PJ em micro-frontends modernos em Angular, integrados a um monorepo corporativo em Java e a um Design System compartilhado com governança entre squads.
                             </p>
                             <div class="case-stack">
@@ -345,8 +352,8 @@
                             </div>
                         </div>
                         <div class="case-footer">
-                            <span class="case-status-badge"><i class="fas fa-shield-alt" style="color: var(--primary);"></i> Case Corporativo</span>
-                            <a href="https://www.linkedin.com/in/emendesgs" target="_blank" class="case-link">Detalhes no LinkedIn <i class="fas fa-arrow-right"></i></a>
+                            <span class="case-status-badge"><i class="fas fa-shield-alt" style="color: var(--primary);"></i> <span data-i18n="case_2_footer">Case Corporativo</span></span>
+                            <a href="https://www.linkedin.com/in/emendesgs" target="_blank" class="case-link"><span data-i18n="case_2_cta">Detalhes no LinkedIn</span> <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -354,11 +361,11 @@
                     <div class="case-card">
                         <div>
                             <div class="case-badges-header">
-                                <span class="case-badge"><i class="fas fa-shield-alt"></i> Missão Crítica</span>
+                                <span class="case-badge"><i class="fas fa-shield-alt"></i> <span data-i18n="case_3_badge">Missão Crítica</span></span>
                                 <span class="case-status-badge"><i class="fas fa-building" style="color: var(--accent);"></i> Bradesco</span>
                             </div>
-                            <h3 class="case-title">Módulos Transacionais PIX-PJ</h3>
-                            <p class="case-desc">
+                            <h3 class="case-title" data-i18n="case_3_title">Módulos Transacionais PIX-PJ</h3>
+                            <p class="case-desc" data-i18n="case_3_desc">
                                 Desenvolvimento e sustentação de soluções em WebView Angular para o canal corporativo do PIX. Alta concorrência, conformidade com o Banco Central e garantia de máxima segurança e estabilidade.
                             </p>
                             <div class="case-stack">
@@ -370,8 +377,8 @@
                             </div>
                         </div>
                         <div class="case-footer">
-                            <span class="case-status-badge"><i class="fas fa-lock" style="color: var(--accent);"></i> Transações Críticas</span>
-                            <a href="https://www.linkedin.com/in/emendesgs" target="_blank" class="case-link">Detalhes no LinkedIn <i class="fas fa-arrow-right"></i></a>
+                            <span class="case-status-badge"><i class="fas fa-lock" style="color: var(--accent);"></i> <span data-i18n="case_3_footer">Transações Críticas</span></span>
+                            <a href="https://www.linkedin.com/in/emendesgs" target="_blank" class="case-link"><span data-i18n="case_3_cta">Detalhes no LinkedIn</span> <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -382,70 +389,70 @@
         <section id="skills" class="section bg-surface">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Arsenal Técnico</span>
-                    <h2 class="section-title">Habilidades & Domínios</h2>
-                    <p class="section-subtitle">Tecnologias e metodologias aplicadas no dia a dia para construir produtos escaláveis.</p>
+                    <span class="section-tag" data-i18n="skills_tag">Arsenal Técnico</span>
+                    <h2 class="section-title" data-i18n="skills_title">Habilidades & Domínios</h2>
+                    <p class="section-subtitle" data-i18n="skills_subtitle">Tecnologias e metodologias aplicadas no dia a dia para construir produtos escaláveis.</p>
                 </div>
 
                 <div class="skills-wrapper">
                     <!-- Frontend Box -->
                     <div class="skills-box">
-                        <h3><i class="fab fa-angular"></i> Frontend & Arquitetura de Interface</h3>
+                        <h3><i class="fab fa-angular"></i> <span data-i18n="skills_frontend_title">Frontend & Arquitetura de Interface</span></h3>
                         <div class="skills-tags-grid">
                             <div class="skill-pill">
                                 <i class="fab fa-angular" style="color: #DD0031;"></i>
-                                <span>Angular (Signals / Standalone / RxJS)</span>
+                                <span data-i18n="skills_frontend_s1">Angular (Signals / Standalone / RxJS)</span>
                             </div>
                             <div class="skill-pill">
                                 <i class="fas fa-code" style="color: #3178C6;"></i>
-                                <span>TypeScript Avançado</span>
+                                <span data-i18n="skills_frontend_s2">TypeScript Avançado</span>
                             </div>
                             <div class="skill-pill">
                                 <i class="fas fa-cubes" style="color: #8B5CF6;"></i>
-                                <span>Micro-frontends (Module Fed.)</span>
+                                <span data-i18n="skills_frontend_s3">Micro-frontends (Module Federation)</span>
                             </div>
                             <div class="skill-pill">
                                 <i class="fas fa-layer-group" style="color: #10B981;"></i>
-                                <span>Design Systems & Tokens</span>
+                                <span data-i18n="skills_frontend_s4">Design Systems & Tokens</span>
                             </div>
                             <div class="skill-pill">
                                 <i class="fab fa-html5" style="color: #E34F26;"></i>
-                                <span>HTML5 Semântico & SASS/SCSS</span>
+                                <span data-i18n="skills_frontend_s5">HTML5 Semântico & SASS/SCSS</span>
                             </div>
                             <div class="skill-pill">
                                 <i class="fas fa-mobile-alt" style="color: #3880FF;"></i>
-                                <span>Ionic & WebViews Híbridos</span>
+                                <span data-i18n="skills_frontend_s6">Ionic & WebViews Híbridos</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Backend & DevOps Box -->
                     <div class="skills-box">
-                        <h3><i class="fas fa-server"></i> Backend, Cloud & Qualidade</h3>
+                        <h3><i class="fas fa-server"></i> <span data-i18n="skills_backend_title">Backend, Cloud & Qualidade</span></h3>
                         <div class="skills-tags-grid">
                             <div class="skill-pill">
                                 <i class="fab fa-java" style="color: #ED8B00;"></i>
-                                <span>Java (Spring Boot / Microsserviços)</span>
+                                <span data-i18n="skills_backend_s1">Java (Spring Boot / Microsserviços)</span>
                             </div>
                             <div class="skill-pill">
                                 <i class="fab fa-node-js" style="color: #68A063;"></i>
-                                <span>Node.js & NestJS</span>
+                                <span data-i18n="skills_backend_s2">Node.js & NestJS</span>
                             </div>
                             <div class="skill-pill">
                                 <i class="fas fa-database" style="color: #336791;"></i>
-                                <span>SQL, PostgreSQL & Prisma</span>
+                                <span data-i18n="skills_backend_s3">SQL, PostgreSQL & Prisma</span>
                             </div>
                             <div class="skill-pill">
                                 <i class="fab fa-aws" style="color: #FF9900;"></i>
-                                <span>AWS Cloud (Certified Essentials)</span>
+                                <span data-i18n="skills_backend_s4">AWS Cloud (Certified Essentials)</span>
                             </div>
                             <div class="skill-pill">
                                 <i class="fab fa-docker" style="color: #2496ED;"></i>
-                                <span>Docker & CI/CD Pipelines</span>
+                                <span data-i18n="skills_backend_s5">Docker & CI/CD Pipelines</span>
                             </div>
                             <div class="skill-pill">
                                 <i class="fas fa-vial" style="color: #FF0000;"></i>
-                                <span>Testes (Jest, Cypress, Jasmine)</span>
+                                <span data-i18n="skills_backend_s6">Testes (Jest, Cypress, Jasmine)</span>
                             </div>
                         </div>
                     </div>
@@ -457,22 +464,22 @@
         <section id="contact" class="section">
             <div class="container">
                 <div class="contact-card-box">
-                    <h3>Vamos construir o próximo nível juntos?</h3>
-                    <p>
+                    <h3 data-i18n="contact_title">Vamos construir o próximo nível juntos?</h3>
+                    <p data-i18n="contact_desc">
                         Estou disponível para novas oportunidades estratégicas (remotas ou híbridas), consultorias de arquitetura frontend e conexões com líderes de engenharia.
                     </p>
                     <div class="contact-action-buttons">
                         <a href="mailto:emendesgs@gmail.com" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i> Enviar Mensagem por E-mail
+                            <i class="fas fa-envelope"></i> <span data-i18n="contact_btn_email">Enviar Mensagem por E-mail</span>
                         </a>
                         <a href="curriculo-everton-mendes.pdf" download class="btn btn-outline">
-                            <i class="fas fa-file-pdf"></i> Baixar CV Master
+                            <i class="fas fa-file-pdf"></i> <span data-i18n="contact_btn_cv">Baixar CV Master</span>
                         </a>
                         <a href="https://wa.me/5581995278116" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                            <i class="fab fa-whatsapp"></i> Conversar no WhatsApp
+                            <i class="fab fa-whatsapp"></i> <span data-i18n="contact_btn_whatsapp">Conversar no WhatsApp</span>
                         </a>
                         <a href="https://www.linkedin.com/in/emendesgs" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                            <i class="fab fa-linkedin-in"></i> Conectar no LinkedIn
+                            <i class="fab fa-linkedin-in"></i> <span data-i18n="contact_btn_linkedin">Conectar no LinkedIn</span>
                         </a>
                     </div>
                 </div>
@@ -485,7 +492,7 @@
         <div class="container footer-content">
             <div class="logo">e<span class="logo-prompt-arrow">&gt;</span>erton<span class="logo-prompt-dev">.dev</span></div>
             <div class="footer-bottom">
-                &copy; <span id="year"></span> Everton Mendes Gonçalves da Silva · São Carlos, SP - Brasil
+                &copy; <span id="year"></span> <span data-i18n="footer_copy">Everton Mendes Gonçalves da Silva · São Carlos, SP - Brasil</span>
             </div>
             <div class="social-links">
                 <a href="https://github.com/emendesgs" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -496,6 +503,7 @@
         </div>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
