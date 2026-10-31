@@ -18,7 +18,7 @@ const I18N = {
         cv_download: "curriculo-everton-mendes.pdf",
 
         // Hero
-        hero_status: "IT Specialist @F1RST (Santander) · Aberto a conexões",
+        hero_status: "IT Specialist · Aberto a conexões",
         hero_role_prefix: "Especialista Frontend & ",
         hero_role_highlight: "Engenheiro de Software",
         hero_bio: "Mais de 7 anos construindo arquiteturas frontend escaláveis e sistemas distribuídos de alta criticidade. Especialista no ecossistema <strong>Angular (Signals/RxJS)</strong>, <strong>Micro-frontends</strong> e <strong>Design Systems</strong>, com sólida atuação em microsserviços <strong>Java (Spring Boot)</strong> e pagamentos instantâneos de larga escala (PIX).",
@@ -27,7 +27,7 @@ const I18N = {
 
         // Code Terminal
         code_comment: "// Perfil Arquitetural",
-        code_role: "'IT Specialist @F1RST (Santander)'",
+        code_role: "'IT Specialist'",
         code_exp: "'7+ anos'",
         code_domain: "'Banking / PIX Transacional'",
         code_design: "'Design Gráfico (SAGA)'",
@@ -167,7 +167,7 @@ const I18N = {
         cv_download: "resume-everton-mendes.pdf",
 
         // Hero
-        hero_status: "IT Specialist @F1RST (Santander) · Open to opportunities",
+        hero_status: "IT Specialist · Open to opportunities",
         hero_role_prefix: "Frontend Specialist & ",
         hero_role_highlight: "Software Engineer",
         hero_bio: "Over 7 years building scalable frontend architectures and mission-critical distributed systems. Specialist in the <strong>Angular ecosystem (Signals/RxJS)</strong>, <strong>Micro-frontends</strong>, and <strong>Design Systems</strong>, with strong expertise in <strong>Java (Spring Boot)</strong> microservices and large-scale instant payments (PIX).",
@@ -176,7 +176,7 @@ const I18N = {
 
         // Code Terminal
         code_comment: "// Architectural Profile",
-        code_role: "'IT Specialist @F1RST (Santander)'",
+        code_role: "'IT Specialist'",
         code_exp: "'7+ years'",
         code_domain: "'Banking / Transactional PIX'",
         code_design: "'Graphic Design Degree (SAGA)'",
