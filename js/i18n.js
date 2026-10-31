@@ -14,6 +14,8 @@ const I18N = {
         nav_skills: "Skills",
         nav_cv: "Currículo",
         nav_contact: "Contato",
+        cv_url: "curriculo-everton-mendes.pdf",
+        cv_download: "curriculo-everton-mendes.pdf",
 
         // Hero
         hero_status: "IT Specialist @F1RST (Santander) · Aberto a conexões",
@@ -161,6 +163,8 @@ const I18N = {
         nav_skills: "Skills",
         nav_cv: "Resume",
         nav_contact: "Contact",
+        cv_url: "resume-everton-mendes.pdf",
+        cv_download: "resume-everton-mendes.pdf",
 
         // Hero
         hero_status: "IT Specialist @F1RST (Santander) · Open to opportunities",
@@ -329,6 +333,22 @@ function setLanguage(lang) {
         const key = el.getAttribute('data-i18n-html');
         if (dict[key] !== undefined) {
             el.innerHTML = dict[key];
+        }
+    });
+
+    // Atualiza links com data-i18n-href (ex: alternar PDF do CV PT/EN)
+    document.querySelectorAll('[data-i18n-href]').forEach(el => {
+        const key = el.getAttribute('data-i18n-href');
+        if (dict[key] !== undefined) {
+            el.setAttribute('href', dict[key]);
+        }
+    });
+
+    // Atualiza atributo download com data-i18n-download
+    document.querySelectorAll('[data-i18n-download]').forEach(el => {
+        const key = el.getAttribute('data-i18n-download');
+        if (dict[key] !== undefined) {
+            el.setAttribute('download', dict[key]);
         }
     });
 
