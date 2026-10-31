@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('active');
 
-            // Bloqueia ou desbloqueia o scroll do body
             if (navLinks.classList.contains('active')) {
                 document.body.style.overflow = 'hidden';
             } else {
@@ -36,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Scroll Suave e Highlight de Seção Ativa
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-link');
+    const header = document.querySelector('.header');
 
     window.addEventListener('scroll', () => {
         let current = '';
@@ -45,8 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
 
-            // Ponto de ajuste para ativação no menu
-            if (scrollY >= (sectionTop - 150)) {
+            if (scrollY >= (sectionTop - 160)) {
                 current = section.getAttribute('id');
             }
         });
@@ -58,35 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Estilo da NavBar ao rolar
-        const header = document.querySelector('.header');
-        if (scrollY > 50) {
-            header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)';
-            header.style.padding = '0';
-        } else {
-            header.style.boxShadow = 'none';
+        // Estilo da NavBar ao rolar (Tokyo Night Frosted Glass)
+        if (header) {
+            if (scrollY > 50) {
+                header.style.background = 'rgba(22, 22, 30, 0.92)';
+                header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+                header.style.padding = '0.75rem 0';
+            } else {
+                header.style.background = 'rgba(22, 22, 30, 0.8)';
+                header.style.boxShadow = 'none';
+                header.style.padding = '1.1rem 0';
+            }
         }
     });
-
-    // Form Submit (Prevent Default por enquanto)
-    const form = document.querySelector('.contact-form');
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Aqui entraria a lógica de envio (Fetch API, etc)
-
-            // Feedback visual simples
-            const btn = form.querySelector('button[type="submit"]');
-            const originalText = btn.textContent;
-
-            btn.textContent = 'Enviado com sucesso!';
-            btn.style.backgroundColor = 'var(--secondary)';
-
-            setTimeout(() => {
-                form.reset();
-                btn.textContent = originalText;
-                btn.style.backgroundColor = 'var(--primary)';
-            }, 3000);
-        });
-    }
 });
